@@ -2,18 +2,18 @@
 // Created by Liyf on 2017/5/27.
 //
 
-#ifndef RENDER_GRAIN_H
-#define RENDER_GRAIN_H
+#ifndef RENDER_TEXTURE_H
+#define RENDER_TEXTURE_H
 
 #include <opencv2/opencv.hpp>
 #include "Material.h"
 
 using namespace cv;
 
-class Grain : public Material {
+class Texture : public Material {
     Mat grain;
 public:
-    Grain(ReflectType ref, char* pic_path):
+    Texture(ReflectType ref, char* pic_path):
     Material(ref, Color())
     {
         grain = imread(pic_path);
@@ -38,4 +38,4 @@ public:
 };
 
 
-#endif //RENDER_GRAIN_H
+#endif //RENDER_TEXTURE_H

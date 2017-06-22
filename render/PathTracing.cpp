@@ -14,7 +14,8 @@
 Color PathTracing::tracing(Light light, int depth, vector<Object *> &objs) {
     double distance;
     int obj_index;
-    if (!isInter(light, obj_index, distance, objs)) return Color();
+    if (!isInter(light, obj_index, distance, objs)) 
+		return Color();
     float3 pos = light.pos + light.direct * distance;
     Object *obj = objs[obj_index];
     float3 n_vec = obj->n_vec;

@@ -3,7 +3,7 @@
 #include "Sphere.h"
 #include "Surface.h"
 #include "PureColor.h"
-#include "Grain.h"
+#include "Texture.h"
 #include <vector>
 
 using namespace std;
@@ -26,37 +26,72 @@ int main(int argc, char** argv) {
     /*-------------------Setup Scene-------------------*/
 	
 	vector<vector<float3> > p;
+	p.resize(5);
+	p[0].push_back(float3(26, -5, 80));
+	p[0].push_back(float3(26, 10, 87));
+	p[0].push_back(float3(26, -15, 94));
+	p[0].push_back(float3(26, 10, 101));
+	p[0].push_back(float3(26, -5, 108));
+
+	p[1].push_back(float3(33, 5, 80));
+	p[1].push_back(float3(33, 40, 87));
+	p[1].push_back(float3(33, -5, 94));
+	p[1].push_back(float3(33, 40, 101));
+	p[1].push_back(float3(33, 5, 108));
+
+	p[2].push_back(float3(40, -15, 80));
+	p[2].push_back(float3(40, 10, 87));
+	p[2].push_back(float3(40, -70, 94));
+	p[2].push_back(float3(40, 10, 101));
+	p[2].push_back(float3(40, -15, 108));
+
+	p[3].push_back(float3(47, 5, 80));
+	p[3].push_back(float3(47, 40, 87));
+	p[3].push_back(float3(47, -5, 94));
+	p[3].push_back(float3(47, 40, 101));
+	p[3].push_back(float3(47, 5, 108));
+
+	p[4].push_back(float3(54, -5, 80));
+	p[4].push_back(float3(54, 10, 87));
+	p[4].push_back(float3(54, -15, 94));
+	p[4].push_back(float3(54, 10, 101));
+	p[4].push_back(float3(54, -5, 108));
+	
+	/*
+	vector<vector<float3> > p;
 	p.resize(3);
-	p[0].push_back(float3(27, 2, 30));
-	p[0].push_back(float3(27, 10, 60));
-	p[0].push_back(float3(27, 2, 90));
+	p[0].push_back(float3(47, -5, 106));
+	p[0].push_back(float3(47, 5, 114));
+	p[0].push_back(float3(47, -5, 122));
+	
+	p[1].push_back(float3(55, 5, 106));
+	p[1].push_back(float3(55, 45, 114));
+	p[1].push_back(float3(55, 5, 122));
+	
+	p[2].push_back(float3(63, -5, 106));
+	p[2].push_back(float3(63, 5, 114));
+	p[2].push_back(float3(63, -5, 122));
+	*/
+	
+	Material* b_m = new PureColor(REFRACTIVE, Color(240, 240, 240));
+	//Surface bz(p, b_m);
 
-	p[1].push_back(float3(40, 5, 30));
-	p[1].push_back(float3(40, 50, 60));
-	p[1].push_back(float3(40, 5, 90));
-
-	p[2].push_back(float3(65, 3, 30));
-	p[2].push_back(float3(65, 25, 60));
-	p[2].push_back(float3(65, 3, 90));
-
-	Material* b_m = new PureColor(SPECULAR, Color(50, 50, 240));
-	Surface bz(p, b_m);
-
-	Material* sp1_m = new Grain(REFRACTIVE, "../grain/concrete.jpg");
-	Sphere sphere1(float3(40, 9.5, 94), 9.5, sp1_m);
+	Material* sp1_m = new Texture(SPECULAR, "../grain/rainbow.jpg");
+	//Sphere sphere1(float3(40, 9.5, 94), 9.5, sp1_m);
 
 	//Material* sp2_m = new PureColor(DIFFUSE, Color(50, 150, 250));
 	Material* sp2_m = new PureColor(REFRACTIVE, Color(220, 220, 220));
-	Sphere sphere2(float3(80, 16, 78), 16, sp2_m);		//79,14,78
+	//Sphere sphere2(float3(80, 16, 78), 16, sp2_m);		//79,14,78
 
-	Material* sp3_m = new Grain(SPECULAR, "../grain/marble.bmp");
+	Material* sp3_m = new Texture(SPECULAR, "../grain/marble.bmp");
 	//    Material* sp3_m = new PureColor(SPECULAR, Color(200, 200, 200));
-	Sphere sphere3(float3(27, 17, 37), 17, sp3_m);
+	//Sphere sphere3(float3(27, 17, 37), 17, sp3_m);
 
-	Material* sp4_m = new Grain(DIFFUSE, "../grain/wallpaper.jpg");
-	Sphere sphere4(float3(55, 6, 114), 6, sp4_m);
+	Material* sp4_m = new Texture(DIFFUSE, "../grain/watercolor.jpg");
+	//Sphere sphere4(float3(55, 6, 114), 6, sp4_m);
+	Surface bz(p, sp1_m);
 
-	Material* lt_m = new PureColor(DIFFUSE, Color(), Color(7000, 7000, 6800));
+	Material* lt_m = new PureColor(DIFFUSE, Color(), Color(6000, 6000, 5800));
 	Sphere light(float3(50, 681.6 - .27, 81), 600, lt_m);
 
 	Material* lw_m = new PureColor(DIFFUSE, Color(200, 100, 100));
@@ -65,10 +100,11 @@ int main(int argc, char** argv) {
 	Material* rw_m = new PureColor(DIFFUSE, Color(180, 100, 220));	//180, 100, 220
 	Sphere right(float3(-1e5 + 99, 40.8, 81.6), 1e5, rw_m);
 
-	Material* bw_m = new PureColor(SPECULAR, Color(50, 50, 50));
+	Material* bw_m = new PureColor(DIFFUSE, Color(200, 200, 200));
 	Sphere back(float3(50, 40.8, 1e5), 1e5, bw_m);
 
-	Material* fw_m = new PureColor(SPECULAR, Color(170, 170, 170));
+	//Material* fw_m = new PureColor(SPECULAR, Color(170, 170, 170));
+	Material* fw_m = new PureColor(DIFFUSE, Color(50, 50, 50));
 	Sphere front(float3(50, 40.8, -1e5 + 170), 1e5, fw_m);
 
 	Material* fl_m = new PureColor(DIFFUSE, Color(200, 200, 120));

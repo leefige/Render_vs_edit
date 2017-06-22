@@ -19,18 +19,19 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Surface.cpp" />
     <ClCompile Include="float3.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PathTracing.cpp" />
     <ClCompile Include="Sphere.cpp" />
-    <ClCompile Include="Surface.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Color.h" />
+    <ClInclude Include="Surface.h" />
     <ClInclude Include="Film.h" />
     <ClInclude Include="float3.h" />
-    <ClInclude Include="Grain.h" />
+    <ClInclude Include="Texture.h" />
     <ClInclude Include="int4.h" />
     <ClInclude Include="Light.h" />
     <ClInclude Include="Material.h" />
@@ -40,7 +41,6 @@
     <ClInclude Include="Render.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="Sphere.h" />
-    <ClInclude Include="Surface.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -94,19 +94,19 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>D:\Users\Liyf\Desktop\vrender\render\render\eigen;D:\Develop\opencv\include\opencv;D:\Develop\opencv\include\opencv2;D:\Develop\opencv\include;$(IncludePath)</IncludePath>
+    <IncludePath>D:\Users\Liyf\Desktop\vrender - 副本\render\render\eigen;D:\Develop\opencv\include\opencv;D:\Develop\opencv\include\opencv2;D:\Develop\opencv\include;$(IncludePath)</IncludePath>
     <LibraryPath>D:\Develop\opencv\build\x64\vc14\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>D:\Users\Liyf\Desktop\vrender\render\render\eigen;D:\Develop\opencv\include\opencv;D:\Develop\opencv\include\opencv2;D:\Develop\opencv\include;$(IncludePath)</IncludePath>
+    <IncludePath>D:\Users\Liyf\Desktop\vrender - 副本\render\render\eigen;D:\Develop\opencv\include\opencv;D:\Develop\opencv\include\opencv2;D:\Develop\opencv\include;$(IncludePath)</IncludePath>
     <LibraryPath>D:\Develop\opencv\build\x64\vc14\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>D:\Users\Liyf\Desktop\vrender\render\render\eigen;D:\Develop\opencv\include\opencv;D:\Develop\opencv\include\opencv2;D:\Develop\opencv\include;$(IncludePath)</IncludePath>
+    <IncludePath>D:\Users\Liyf\Desktop\vrender - 副本\render\render\eigen;D:\Develop\opencv\include\opencv;D:\Develop\opencv\include\opencv2;D:\Develop\opencv\include;$(IncludePath)</IncludePath>
     <LibraryPath>D:\Develop\opencv\build\x64\vc14\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>D:\Users\Liyf\Desktop\vrender\render\render\eigen;D:\Develop\opencv\include\opencv;D:\Develop\opencv\include\opencv2;D:\Develop\opencv\include;$(IncludePath)</IncludePath>
+    <IncludePath>D:\Users\Liyf\Desktop\vrender - 副本\render\render\eigen;D:\Develop\opencv\include\opencv;D:\Develop\opencv\include\opencv2;D:\Develop\opencv\include;$(IncludePath)</IncludePath>
     <LibraryPath>D:\Develop\opencv\build\x64\vc14\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
