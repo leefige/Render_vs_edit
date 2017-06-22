@@ -1,0 +1,2212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="EigenLapack"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\bench\;CMake Files\bench\btl\;CMake Files\bench\btl\cmake\;CMake Files\bench\btl\libs\;CMake Files\bench\btl\libs\eigen3\;CMake Files\bench\btl\libs\eigen2\;CMake Files\bench\btl\libs\tensors\;CMake Files\bench\btl\libs\BLAS\;CMake Files\bench\btl\libs\ublas\;CMake Files\bench\btl\libs\gmm\;CMake Files\bench\btl\libs\mtl4\;CMake Files\bench\btl\libs\blitz\;CMake Files\bench\btl\libs\tvmet\;CMake Files\bench\btl\libs\STL\;CMake Files\bench\btl\libs\blaze\;CMake Files\bench\btl\data\;CMake Files\cmake\;CMake Files\scripts\;CMake Files\Eigen\;CMake Files\doc\;CMake Files\doc\examples\;CMake Files\doc\special_examples\;CMake Files\doc\snippets\;CMake Files\unsupported\;CMake Files\unsupported\doc\;CMake Files\unsupported\doc\examples\;CMake Files\unsupported\doc\snippets\;CMake Files\unsupported\Eigen\;CMake Files\unsupported\Eigen\CXX11\;CMake Files\unsupported\test\;CMake Files\test\;CMake Files\blas\;CMake Files\lapack\;CMake Files\demos\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="E:/setup/develop/eigen/compiled/lapack"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/setup/develop/eigen/compiled/lapack/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/setup/develop/eigen/compiled/lapack/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/setup/develop/eigen/compiled/lapack/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/setup/develop/eigen/compiled/lapack/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lapack">
+				<Option working_dir="E:/setup/develop/eigen/compiled/lapack"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/setup/develop/eigen/compiled/lapack/Makefile&quot;  VERBOSE=1 lapack"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/setup/develop/eigen/compiled/lapack/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/setup/develop/eigen/compiled/lapack/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/setup/develop/eigen/compiled/lapack/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="eigen_lapack_static">
+				<Option output="E:/setup/develop/eigen/compiled/lapack/libeigen_lapack_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/setup/develop/eigen/compiled/lapack"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/setup/develop/eigen/compiled/lapack"/>
+					<Add directory="E:/setup/develop/eigen/lapack"/>
+					<Add directory="E:/setup/develop/eigen"/>
+					<Add directory="E:/setup/develop/eigen/compiled"/>
+					<Add directory="E:/setup/develop/eigen/lapack/../blas"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/backward"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/setup/develop/eigen/compiled/lapack/Makefile&quot;  VERBOSE=1 eigen_lapack_static"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/setup/develop/eigen/compiled/lapack/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/setup/develop/eigen/compiled/lapack/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/setup/develop/eigen/compiled/lapack/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="eigen_lapack_static/fast">
+				<Option output="E:/setup/develop/eigen/compiled/lapack/libeigen_lapack_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/setup/develop/eigen/compiled/lapack"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/setup/develop/eigen/compiled/lapack"/>
+					<Add directory="E:/setup/develop/eigen/lapack"/>
+					<Add directory="E:/setup/develop/eigen"/>
+					<Add directory="E:/setup/develop/eigen/compiled"/>
+					<Add directory="E:/setup/develop/eigen/lapack/../blas"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/backward"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/setup/develop/eigen/compiled/lapack/Makefile&quot;  VERBOSE=1 eigen_lapack_static/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/setup/develop/eigen/compiled/lapack/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/setup/develop/eigen/compiled/lapack/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/setup/develop/eigen/compiled/lapack/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="eigen_lapack">
+				<Option output="E:/setup/develop/eigen/compiled/lapack/libeigen_lapack.dll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/setup/develop/eigen/compiled/lapack"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/setup/develop/eigen/compiled/lapack"/>
+					<Add directory="E:/setup/develop/eigen/lapack"/>
+					<Add directory="E:/setup/develop/eigen"/>
+					<Add directory="E:/setup/develop/eigen/compiled"/>
+					<Add directory="E:/setup/develop/eigen/lapack/../blas"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/backward"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/setup/develop/eigen/compiled/lapack/Makefile&quot;  VERBOSE=1 eigen_lapack"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/setup/develop/eigen/compiled/lapack/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/setup/develop/eigen/compiled/lapack/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/setup/develop/eigen/compiled/lapack/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="eigen_lapack/fast">
+				<Option output="E:/setup/develop/eigen/compiled/lapack/libeigen_lapack.dll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/setup/develop/eigen/compiled/lapack"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/setup/develop/eigen/compiled/lapack"/>
+					<Add directory="E:/setup/develop/eigen/lapack"/>
+					<Add directory="E:/setup/develop/eigen"/>
+					<Add directory="E:/setup/develop/eigen/compiled"/>
+					<Add directory="E:/setup/develop/eigen/lapack/../blas"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/backward"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/setup/develop/eigen/compiled/lapack/Makefile&quot;  VERBOSE=1 eigen_lapack/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/setup/develop/eigen/compiled/lapack/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/setup/develop/eigen/compiled/lapack/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/setup/develop/eigen/compiled/lapack/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="E:/setup/develop/eigen/blas/xerbla.cpp">
+			<Option target="eigen_lapack_static"/>
+			<Option target="eigen_lapack"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/lapack/complex_double.cpp">
+			<Option target="eigen_lapack_static"/>
+			<Option target="eigen_lapack"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/lapack/complex_single.cpp">
+			<Option target="eigen_lapack_static"/>
+			<Option target="eigen_lapack"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/lapack/double.cpp">
+			<Option target="eigen_lapack_static"/>
+			<Option target="eigen_lapack"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/lapack/single.cpp">
+			<Option target="eigen_lapack_static"/>
+			<Option target="eigen_lapack"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/CTestConfig.cmake">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/CTestCustom.cmake.in">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/MacroOptionalAddSubdirectory.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindATLAS.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindMKL.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindOPENBLAS.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindACML.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindGMM.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindMTL4.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindBlitz.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindTvmet.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindBLAZE.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/MacroOptionalAddSubdirectory.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindATLAS.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindMKL.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindOPENBLAS.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindACML.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindGMM.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindMTL4.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindBlitz.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindTvmet.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindBLAZE.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/cmake/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\bench\btl\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/libs/eigen3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\libs\eigen3\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/libs/eigen3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\libs\eigen3\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/libs/eigen2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\libs\eigen2\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/libs/eigen2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\libs\eigen2\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/libs/tensors/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\libs\tensors\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/libs/tensors/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\libs\tensors\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/libs/BLAS/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\libs\BLAS\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/libs/BLAS/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\libs\BLAS\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/libs/ublas/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\libs\ublas\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/libs/ublas/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\libs\ublas\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/libs/gmm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\libs\gmm\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/libs/gmm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\libs\gmm\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/libs/mtl4/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\libs\mtl4\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/libs/mtl4/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\libs\mtl4\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/libs/blitz/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\libs\blitz\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/libs/blitz/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\libs\blitz\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/libs/tvmet/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\libs\tvmet\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/libs/tvmet/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\libs\tvmet\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/libs/STL/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\libs\STL\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/libs/STL/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\libs\STL\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/libs/blaze/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\libs\blaze\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/libs/blaze/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\libs\blaze\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/data/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\data\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/bench/btl/data/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\bench\btl\data\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/FindEigen2.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/FindStandardMathLibrary.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/EigenConfigureTesting.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/EigenTesting.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/EigenDetermineOSVersion.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/Eigen3Config.cmake.in">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/RegexUtils.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/language_support.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/FindLAPACK.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/FindBLAS.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/FindCholmod.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/FindUmfpack.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/FindSuperLU.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/FindPastix.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/FindHWLOC.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/FindBLASEXT.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/FindBLAS.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/FindScotch.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/FindPTSCOTCH.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/FindMetis.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/FindSPQR.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/language_support.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/language_support.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/FindGoogleHash.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/FindAdolc.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/FindMPFR.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/FindGMP.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/FindFFTW.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/FindGLEW.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/FindEigen2.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/language_support.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/cmake/language_support.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/scripts/cdashtesting.cmake.in">
+			<Option virtualFolder="CMake Files\scripts\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/scripts/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\scripts\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/scripts/buildtests.in">
+			<Option virtualFolder="CMake Files\scripts\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/scripts/check.in">
+			<Option virtualFolder="CMake Files\scripts\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/scripts/debug.in">
+			<Option virtualFolder="CMake Files\scripts\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/scripts/release.in">
+			<Option virtualFolder="CMake Files\scripts\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/Eigen/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Eigen\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\doc\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/Doxyfile.in">
+			<Option virtualFolder="CMake Files\doc\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/Doxyfile.in">
+			<Option virtualFolder="CMake Files\doc\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/eigendoxy_header.html.in">
+			<Option virtualFolder="CMake Files\doc\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/eigendoxy_footer.html.in">
+			<Option virtualFolder="CMake Files\doc\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/eigendoxy_layout.xml.in">
+			<Option virtualFolder="CMake Files\doc\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\doc\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/Doxyfile.in">
+			<Option virtualFolder="CMake Files\doc\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/Doxyfile.in">
+			<Option virtualFolder="CMake Files\doc\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/eigendoxy_header.html.in">
+			<Option virtualFolder="CMake Files\doc\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/eigendoxy_footer.html.in">
+			<Option virtualFolder="CMake Files\doc\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/eigendoxy_layout.xml.in">
+			<Option virtualFolder="CMake Files\doc\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\doc\examples\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\doc\examples\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/special_examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\doc\special_examples\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/special_examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\doc\special_examples\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/unsupported/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\unsupported\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/unsupported/doc/eigendoxy_layout.xml.in">
+			<Option virtualFolder="CMake Files\unsupported\doc\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/unsupported/doc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\unsupported\doc\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/unsupported/doc/eigendoxy_layout.xml.in">
+			<Option virtualFolder="CMake Files\unsupported\doc\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/unsupported/doc/examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\unsupported\doc\examples\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/unsupported/doc/snippets/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\unsupported\doc\snippets\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/unsupported/Eigen/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\unsupported\Eigen\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/unsupported/Eigen/CXX11/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\unsupported\Eigen\CXX11\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/unsupported/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\unsupported\test\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/blas/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\blas\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/blas/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\blas\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/lapack/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lapack\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/lapack/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lapack\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/demos/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\demos\"/>
+		</Unit>
+		<Unit filename="E:/setup/develop/eigen/demos/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\demos\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

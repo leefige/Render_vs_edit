@@ -1,0 +1,2 @@
+# Empty dependencies file for mapstride.
+# This may be replaced when dependencies are built.
